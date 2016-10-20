@@ -33,7 +33,7 @@ ctrl.get('/:id', function (req,res,next) {
   if(typeof id === 'number'){
     res.json(findUserById(id))
   }
-  
+
   res.json({
     message: 'user not found'
   });
